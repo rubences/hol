@@ -11,6 +11,34 @@ import sys
 
 # Complete the birthdayCakeCandles function below.
 def birthdayCakeCandles(ar):
+"""Take in 2 integers, convert them to binary,
+    return a binary number that is the
+    result of a binary xor operation on the integers provided.
+    >>> birthdayCakeCandles(25)
+    '2'
+    >>> birthdayCakeCandles(37)
+    '0b010111'
+    >>> birthdayCakeCandles(21)
+    '0b01011'
+    >>> birthdayCakeCandles(58)
+    '0b1110011'
+    >>> birthdayCakeCandles(0)
+    '0b11111111'
+    >>> birthdayCakeCandles(256)
+    '0b000000000'
+    >>> birthdayCakeCandles(-1)
+    Traceback (most recent call last):
+        ...
+    ValueError: the value of both inputs must be positive
+    >>> birthdayCakeCandles(1.1)
+    Traceback (most recent call last):
+        ...
+    TypeError: 'float' object cannot be interpreted as an integer
+    >>> birthdayCakeCandles("1")
+    Traceback (most recent call last):
+        ...
+    TypeError: '<' not supported between instances of 'str' and 'int'
+"""
     
     counter = 0
     m = max(ar)
