@@ -1,0 +1,23 @@
+beautifulsoup4
+fake_useragent
+keras
+lxml
+matplotlib
+numpy
+opencv-python
+pandas
+pillow
+projectq
+qiskit
+requests
+rich
+scikit-fuzzy
+scikit-learn
+statsmodels
+sympy
+tensorflow; python_version < "3.11"
+texttable
+tweepy
+xgboost
+yulewalker
+#para poder instalar el requirements.txt se usa el comando pip install -r requirements.txt
