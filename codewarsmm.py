@@ -7,6 +7,18 @@ Each node has a weight attribute which could represent how often the node is acc
 
 Now we are getting to the more challenging part of this kata. Your final task is to write a function make_min_tree that takes a non-empty list of nodes as argument and returns a tree with minimal cost. The list passed as argument is sorted in ascending order. No two nodes in the list are equal (under the definition of "equal" provided by __eq__ and __ne__). For this last part, your code will be tested with lists up to a length of 100. (Note: My algorithm is quadratic in space and cubic in time, but I am not sure it cannot be done better.)"""
 
+def cost(tree, depth=1):
+    '''Returns the cost of a tree which root is depth deep.'''
+
+    if tree.is_leaf():
+        return tree.root.weight * depth
+    else:
+        return tree.root.weight * depth + cost(tree.left, depth + 1) + cost(tree.right, depth + 1)
+
+def test():
+
+    
+
 class Tree(object):
     
     def __init__(self, root, left=None, right=None):
@@ -84,5 +96,5 @@ def make_min_tree(node_list):
     else:
 
 
-            
+
     pass
