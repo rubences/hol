@@ -23,7 +23,7 @@ def birthdayCakeCandles(ar):
 
 
 if __name__ == '__main__':
-import doctest
+    import doctest
 
     # run doc test
     doctest.testmod()
